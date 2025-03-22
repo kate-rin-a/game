@@ -62,11 +62,11 @@ void print_winner(int score1, int score2)
   printf("\033[H\033[J");
   if (score1 == 3)
   {
-    printf("The winner is over there <<<");
+    printf("The winner is first player");
   }
   else if (score2 == 3)
   {
-    printf("The winner is over there >>>");
+    printf("The winner is second player >>>");
   }
 }
 
@@ -105,7 +105,7 @@ int main()
   int score2 = 0;
 
   // Отрисовка игрового поля
-  while (input != 'q' && score1 < 3 && score2 < 3)
+  while (input != 'q' && score1 < 21 && score2 < 21)
   {
     // Очистка экрана
     printf("\033[H\033[J"); //очистка поля
